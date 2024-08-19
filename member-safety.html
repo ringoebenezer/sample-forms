@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./member-safety.css" />
+    <title>Memeber Safety Assessment</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./images/star-home-logo.png" alt="" />
+
+        <div class="address">
+          <span>Star Home Health Solutions, LLC.</span>
+          <span>33 Waldo Street, Suite 2LC</span>
+          <span>Worcester MA 01608</span>
+          <span style="color: #258bc9">info@starhomehs.com</span>
+        </div>
+      </div>
+
+      <h2>Member Safety Assessment</h2>
+      <div class="form">
+        <div class="form-section section-one">
+          <label>1.</label>
+
+          <div class="content">
+            <div class="date-group">
+              <label>Date:</label>
+              <input type="text" name="date" />
+            </div>
+
+            <div class="member-inputs">
+              <div class="name">
+                <label>Member Name:</label>
+                <input type="text" name="member-name" />
+              </div>
+
+              <div class="dob">
+                <label>Member DOB:</label>
+                <input type="text" name="member-dob" />
+              </div>
+            </div>
+
+            <div class="caregiver-inputs">
+              <div class="name">
+                <label>Caregiver Name:</label>
+                <input type="text" name="caregiver-name" />
+              </div>
+
+              <div class="phone">
+                <label>Caregiver Telephone Number:</label>
+                <input type="text" name="caregiver-phone" />
+              </div>
+            </div>
+
+            <div class="member-full-address">
+              <label>Member Full Address:</label>
+              <input type="text" name="member-full-address" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section section-two">
+          <label>2.</label>
+
+          <div class="content">
+            <div class="checkboxes">
+              <label>1) Can Member:</label>
+
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="can-recognize-danger"
+                  name="can-recognize-danger"
+                  value="Bike" />
+                <label>Recognize signs of danger in the community ?</label>
+              </div>
+
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="can-seek-assistance"
+                  name="can-seek-assistance"
+                  value="Bike" />
+                <label
+                  >Seek assistance family members, neighbors should that be
+                  required ?</label
+                >
+              </div>
+
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="can-call-911"
+                  name="can-call-911"
+                  value="Bike" />
+                <label>Can member call 911? </label>
+              </div>
+            </div>
+
+            <div class="notes">
+              <label>Notes:</label>
+
+              <div class="note-inputs">
+                <input type="text" id="note-part1" class="input-field" />
+                <input type="text" id="note-part2" class="input-field" />
+              </div>
+            </div>
+
+            <div class="emergency">
+              <label
+                >2) Can the member communicate clearly during an emergency?
+                (Please note members preferred language)</label
+              >
+
+              <div class="note-inputs">
+                <input
+                  type="text"
+                  id="note-emergency-part1"
+                  class="input-field" />
+                <input
+                  type="text"
+                  id="note-emergency-part2"
+                  class="input-field" />
+              </div>
+            </div>
+
+            <div class="stranger">
+              <label
+                >3) Can AFC member differentiate strangers from non
+                strangers?</label
+              >
+
+              <div class="note-inputs">
+                <input
+                  type="text"
+                  id="note-strangers-part1"
+                  class="input-field" />
+                <input
+                  type="text"
+                  id="note-strangers-part2"
+                  class="input-field" />
+              </div>
+            </div>
+
+            <div class="street-crossing">
+              <label
+                >4) Does the AFC member have street crossing skills ?</label
+              >
+
+              <div class="note-inputs">
+                <input
+                  type="text"
+                  id="street-crossing-part1"
+                  class="input-field" />
+                <input
+                  type="text"
+                  id="street-crossing-part2"
+                  class="input-field" />
+              </div>
+            </div>
+
+            <div class="safety-skills">
+              <label
+                >5) Does the AFC member have safety skills in using household
+                appliances ?</label
+              >
+
+              <div class="note-inputs">
+                <input
+                  type="text"
+                  id="safety-skills-part1"
+                  class="input-field" />
+                <input
+                  type="text"
+                  id="safety-skills-part2"
+                  class="input-field" />
+              </div>
+            </div>
+
+            <div class="evacuation">
+              <div class="evacuation-capability">
+                <label
+                  >6) Is the AFC member capable of evacuating the house within 2
+                  1/2 minutes ?</label
+                >
+
+                <div class="radios">
+                  <div class="radio">
+                    <input
+                      type="checkbox"
+                      id="can-seek-assistance"
+                      name="can-seek-assistance"
+                      value="Bike" />
+                    <label>Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="checkbox"
+                      id="can-call-911"
+                      name="can-call-911"
+                      value="Bike" />
+                    <label>No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="assistance-level">
+                <label>(Please describe level of assistance needed)</label>
+
+                <div class="note-inputs">
+                  <input
+                    type="text"
+                    id="assistance-level-part1"
+                    class="input-field" />
+                  <input
+                    type="text"
+                    id="assistance-level-part2"
+                    class="input-field" />
+                </div>
+              </div>
+            </div>
+
+            <div class="relocation-plan">
+              <div class="disaster">
+                <label
+                  >7) Is there a relocation plan in place in the event of a
+                  fire, flood, or other natural or unnatural disaster ?</label
+                >
+
+                <div class="radios">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      name="can-seek-assistance"
+                      value="Bike" />
+                    <label>Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      name="can-seek-assistance"
+                      value="Bike" />
+                    <label>No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="relocation-notes">
+                <label>Notes</label>
+
+                <div class="note-inputs">
+                  <input
+                    type="text"
+                    id="relocation-plan-part1"
+                    class="input-field" />
+                  <input
+                    type="text"
+                    id="relocatio-plan-part2"
+                    class="input-field" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section section-three">
+          <label>3.</label>
+
+          <div class="content">
+            <div class="kin-group">
+              <div class="kin">
+                <label>Name:</label>
+                <input type="text" name="kin-name" />
+              </div>
+
+              <div class="kin">
+                <label>Relationship to Member:</label>
+                <input type="text" name="kin-relationship" />
+              </div>
+
+              <div class="kin">
+                <label>Phone:</label>
+                <input type="text" name="kin-phone" />
+              </div>
+            </div>
+
+            <div class="kin kin-address">
+              <label>Address:</label>
+              <input type="text" name="address" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section section-four">
+          <label>4.</label>
+
+          <div class="content">
+            <div class="signature">
+              <label>AFC Staff Name/Title:</label>
+              <input type="text" name="name" />
+            </div>
+
+            <div class="signature">
+              <label>Signature:</label>
+              <input type="text" name="kin-relationship" />
+            </div>
+
+            <div class="signature">
+              <label>Date:</label>
+              <input type="text" name="kin-phone" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
