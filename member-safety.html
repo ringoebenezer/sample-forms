@@ -318,5 +318,20 @@
       </div>
       <footer class="footer">CM - Member Safety Assessment</footer>
     </div>
+
+    <script>
+      document
+        .querySelectorAll(".input-field")
+        .forEach((input, index, inputs) => {
+          input.addEventListener("input", function () {
+            if (this.value.length === 180) {
+              const nextInput = inputs[index + 1];
+              if (nextInput) {
+                nextInput.focus();
+              }
+            }
+          });
+        });
+    </script>
   </body>
 </html>
