@@ -52,6 +52,7 @@
 
 label {
   font-size: 0.9rem;
+  font-weight: bold;
 }
 
 textarea:focus,
@@ -302,14 +303,16 @@ button {
   padding: 0px 15px;
   font-weight: 500;
   cursor: pointer;
+  color: white;
   transition-duration: 0.3s;
+  background-color: #4875e8;
 }
 
 .save-progress {
   color: #4875e8;
-  background-color: #fff;
+  background-color: #fff !important;
   /* border: none; */
-  border-bottom: 2px solid #4875e8;
+  border-bottom: 2px solid #8d929e;
 }
 
 button:hover {
