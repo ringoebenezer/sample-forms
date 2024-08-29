@@ -4,86 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./member-safety.css" />
-    <title>Memeber Safety Assessment</title>
+    <title>Member Safety Assessment</title>
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <img src="./images/star-home-logo.png" alt="" />
-
+      <header class="header">
+        <img
+          src="./images/star-home-logo.png"
+          alt="Star Home Health Solutions Logo" />
         <div class="address">
           <span>Star Home Health Solutions, LLC.</span>
           <span>33 Waldo Street, Suite 2LC</span>
           <span>Worcester MA 01608</span>
           <span style="color: #258bc9">info@starhomehs.com</span>
         </div>
-      </div>
+      </header>
 
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 0.5rem;
-          position: sticky;
-          top: 0;
-          background-color: white;
-          z-index: 1000;
-          padding: 1rem 0;
-        ">
-        <h2>Member Safety Assessment</h2>
-        <button
-          type="button"
-          class="save-progress"
-          id="save-progress"
-          style="width: fit-content; align-self: flex-end">
-          <span>Save Progress</span>
-        </button>
-      </div>
+      <h2>Member Safety Assessment</h2>
 
-      <form class="form" id="member-safety-form">
+      <form class="form">
+        <!-- Section One -->
         <div class="form-section section-one">
           <label>1.</label>
-
           <div class="content">
             <div class="date-group">
-              <label>Date:</label>
-              <input type="text" name="member-date" />
+              <label for="date">Date:</label>
+              <input type="text" id="date" name="date" />
             </div>
 
             <div class="member-inputs">
               <div class="name">
-                <label>Member Name:</label>
-                <input type="text" name="member-name" />
+                <label for="member-name">Member Name:</label>
+                <input type="text" id="member-name" name="member-name" />
               </div>
 
               <div class="dob">
-                <label>Member DOB:</label>
-                <input type="text" name="member-dob" />
+                <label for="member-dob">Member DOB:</label>
+                <input type="text" id="member-dob" name="member-dob" />
               </div>
             </div>
 
             <div class="caregiver-inputs">
               <div class="name">
-                <label>Caregiver Name:</label>
-                <input type="text" name="caregiver-name" />
+                <label for="caregiver-name">Caregiver Name:</label>
+                <input type="text" id="caregiver-name" name="caregiver-name" />
               </div>
 
               <div class="phone">
-                <label>Caregiver Telephone Number:</label>
-                <input type="text" name="caregiver-phone" />
+                <label for="caregiver-phone">Caregiver Telephone Number:</label>
+                <input
+                  type="text"
+                  id="caregiver-phone"
+                  name="caregiver-phone" />
               </div>
             </div>
 
             <div class="member-full-address">
-              <label>Member Full Address:</label>
-              <input type="text" name="member-full-address" />
+              <label for="member-full-address">Member Full Address:</label>
+              <input
+                type="text"
+                id="member-full-address"
+                name="member-full-address" />
             </div>
           </div>
         </div>
 
+        <!-- Section Two -->
         <div class="form-section section-two">
           <label>2.</label>
-
           <div class="content">
             <div class="checkboxes">
               <label>1) Can Member:</label>
@@ -92,36 +80,31 @@
                 <input
                   type="checkbox"
                   id="can-recognize-danger"
-                  name="can-recognize-danger"
-                  value="Bike" />
-                <label>Recognize signs of danger in the community ?</label>
-              </div>
-
-              <div class="checkbox">
-                <input
-                  type="checkbox"
-                  id="can-seek-assistance"
-                  name="can-seek-assistance"
-                  value="Bike" />
-                <label
-                  >Seek assistance family members, neighbors should that be
-                  required ?</label
+                  name="can-recognize-danger" />
+                <label for="can-recognize-danger"
+                  >Recognize signs of danger in the community?</label
                 >
               </div>
 
               <div class="checkbox">
                 <input
                   type="checkbox"
-                  id="can-call-911"
-                  name="can-call-911"
-                  value="Bike" />
-                <label>Can member call 911? </label>
+                  id="can-seek-assistance"
+                  name="can-seek-assistance" />
+                <label for="can-seek-assistance"
+                  >Seek assistance from family members, neighbors if
+                  required?</label
+                >
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="can-call-911" name="can-call-911" />
+                <label for="can-call-911">Call 911?</label>
               </div>
             </div>
 
             <div class="notes">
-              <label>Notes:</label>
-
+              <label for="note-part1">Notes:</label>
               <div class="note-inputs">
                 <input type="text" id="note-part1" class="input-field" />
                 <input type="text" id="note-part2" class="input-field" />
@@ -129,11 +112,10 @@
             </div>
 
             <div class="emergency">
-              <label
+              <label for="note-emergency-part1"
                 >2) Can the member communicate clearly during an emergency?
-                (Please note members preferred language)</label
+                (Please note member's preferred language)</label
               >
-
               <div class="note-inputs">
                 <input
                   type="text"
@@ -147,11 +129,10 @@
             </div>
 
             <div class="stranger">
-              <label
-                >3) Can AFC member differentiate strangers from non
-                strangers?</label
+              <label for="note-strangers-part1"
+                >3) Can AFC member differentiate strangers from
+                non-strangers?</label
               >
-
               <div class="note-inputs">
                 <input
                   type="text"
@@ -165,10 +146,9 @@
             </div>
 
             <div class="street-crossing">
-              <label
-                >4) Does the AFC member have street crossing skills ?</label
+              <label for="street-crossing-part1"
+                >4) Does the AFC member have street crossing skills?</label
               >
-
               <div class="note-inputs">
                 <input
                   type="text"
@@ -182,11 +162,10 @@
             </div>
 
             <div class="safety-skills">
-              <label
+              <label for="safety-skills-part1"
                 >5) Does the AFC member have safety skills in using household
-                appliances ?</label
+                appliances?</label
               >
-
               <div class="note-inputs">
                 <input
                   type="text"
@@ -201,33 +180,34 @@
 
             <div class="evacuation">
               <div class="evacuation-capability">
-                <label
+                <label for="evacuation-yes"
                   >6) Is the AFC member capable of evacuating the house within 2
-                  1/2 minutes ?</label
+                  1/2 minutes?</label
                 >
-
                 <div class="radios">
                   <div class="radio">
                     <input
-                      type="checkbox"
-                      name="can-evacuate-house"
-                      value="Bike" />
-                    <label>Yes</label>
+                      type="radio"
+                      id="evacuation-yes"
+                      name="evacuation-capability"
+                      value="Yes" />
+                    <label for="evacuation-yes">Yes</label>
                   </div>
-
                   <div class="radio">
                     <input
-                      type="checkbox"
-                      name="can-evacuate-house"
-                      value="Bike" />
-                    <label>No</label>
+                      type="radio"
+                      id="evacuation-no"
+                      name="evacuation-capability"
+                      value="No" />
+                    <label for="evacuation-no">No</label>
                   </div>
                 </div>
               </div>
 
               <div class="assistance-level">
-                <label>(Please describe level of assistance needed)</label>
-
+                <label for="assistance-level-part1"
+                  >(Please describe the level of assistance needed)</label
+                >
                 <div class="note-inputs">
                   <input
                     type="text"
@@ -243,33 +223,32 @@
 
             <div class="relocation-plan">
               <div class="disaster">
-                <label
+                <label for="relocation-yes"
                   >7) Is there a relocation plan in place in the event of a
-                  fire, flood, or other natural or unnatural disaster ?</label
+                  fire, flood, or other natural or unnatural disaster?</label
                 >
-
                 <div class="radios">
                   <div class="radio">
                     <input
                       type="radio"
-                      name="can-seek-assistance"
-                      value="Bike" />
-                    <label>Yes</label>
+                      id="relocation-yes"
+                      name="relocation-plan"
+                      value="Yes" />
+                    <label for="relocation-yes">Yes</label>
                   </div>
-
                   <div class="radio">
                     <input
                       type="radio"
-                      name="can-seek-assistance"
-                      value="Bike" />
-                    <label>No</label>
+                      id="relocation-no"
+                      name="relocation-plan"
+                      value="No" />
+                    <label for="relocation-no">No</label>
                   </div>
                 </div>
               </div>
 
               <div class="relocation-notes">
-                <label>Notes</label>
-
+                <label for="relocation-plan-part1">Notes:</label>
                 <div class="note-inputs">
                   <input
                     type="text"
@@ -285,79 +264,69 @@
           </div>
         </div>
 
+        <!-- Section Three -->
         <div class="form-section section-three">
           <label>3.</label>
-
           <div class="content">
             <div class="kin-group">
               <div class="kin">
-                <label>Name:</label>
-                <input type="text" name="kin-name" />
+                <label for="kin-name">Name:</label>
+                <input type="text" id="kin-name" name="kin-name" />
               </div>
 
               <div class="kin">
-                <label>Relationship to Member:</label>
-                <input type="text" name="kin-relationship" />
+                <label for="kin-relationship">Relationship to Member:</label>
+                <input
+                  type="text"
+                  id="kin-relationship"
+                  name="kin-relationship" />
               </div>
 
               <div class="kin">
-                <label>Phone:</label>
-                <input type="text" name="kin-phone" />
+                <label for="kin-phone">Phone:</label>
+                <input type="text" id="kin-phone" name="kin-phone" />
               </div>
             </div>
 
             <div class="kin kin-address">
-              <label>Address:</label>
-              <input type="text" name="address" />
+              <label for="kin-address">Address:</label>
+              <input type="text" id="kin-address" name="kin-address" />
             </div>
           </div>
         </div>
 
+        <!-- Section Four -->
         <div class="form-section section-four">
           <label>4.</label>
-
           <div class="content">
-            <div class="signature">
-              <label>AFC Staff Name/Title:</label>
-              <input type="text" name="name" />
-            </div>
+            <label for="caregiver-signature">Caregiver Signature:</label>
+            <input
+              type="text"
+              id="caregiver-signature"
+              name="caregiver-signature" />
+            <label for="caregiver-signature-date">Date:</label>
+            <input
+              type="text"
+              id="caregiver-signature-date"
+              name="caregiver-signature-date" />
+          </div>
+        </div>
 
-            <div class="signature">
-              <label>Signature:</label>
-              <input type="text" name="kin-signature" />
-            </div>
-
-            <div class="signature">
-              <label>Date:</label>
-              <input type="text" name="kin-date" />
-            </div>
+        <!-- Section Five -->
+        <div class="form-section section-five">
+          <label>5.</label>
+          <div class="content">
+            <label for="staff-signature">Care Manager/Nurse Signature:</label>
+            <input type="text" id="staff-signature" name="staff-signature" />
+            <label for="staff-signature-date">Date:</label>
+            <input
+              type="text"
+              id="staff-signature-date"
+              name="staff-signature-date" />
           </div>
         </div>
       </form>
-
-      <div class="action-buttons-container">
-        <div class="action-buttons">
-          <button type="button" id="submit-btn">Submit</button>
-        </div>
-      </div>
-
-      <footer class="footer">CM - Member Safety Assessment</footer>
+      <div style="height: 4rem"></div>
     </div>
-
-    <script src="./member-safety.js"></script>
-    <script>
-      document
-        .querySelectorAll(".input-field")
-        .forEach((input, index, inputs) => {
-          input.addEventListener("input", function () {
-            if (this.value.length === 155) {
-              const nextInput = inputs[index + 1];
-              if (nextInput) {
-                nextInput.focus();
-              }
-            }
-          });
-        });
-    </script>
   </body>
 </html>

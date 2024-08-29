@@ -21,8 +21,6 @@
 }
 
 .footer {
-  border: none;
-  border-top: 0.5px solid black;
   font-size: 0.7rem;
   color: #333;
   padding-top: 1rem;
@@ -65,7 +63,9 @@ input {
   border: none;
   border-bottom: 0.5px solid black;
   font-size: 0.9rem;
-  padding-top: 0.5rem;
+  padding-top: 0.8rem;
+  margin-top: 0.5rem;
+  background-color: #f0f4fe;
 }
 
 .section-one > .content {
@@ -136,7 +136,7 @@ input {
 
 .checkbox {
   display: flex;
-  align-items: start;
+  align-items: end;
   padding: 0.5rem;
   gap: 5px;
   margin-top: 5px;
@@ -275,4 +275,46 @@ input {
   .container {
     width: 70vw !important;
   }
+}
+
+.action-buttons-container {
+  margin-top: 1rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.action-buttons {
+  width: fit-content;
+
+  display: flex;
+  gap: 2rem;
+}
+
+button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40px;
+  border: none;
+  padding: 0px 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.save-progress {
+  color: #4875e8;
+  background-color: #fff;
+  /* border: none; */
+  border-bottom: 2px solid #4875e8;
+}
+
+button:hover {
+  scale: 0.97;
+  border: none;
+  color: white;
+  background-color: #4875e8;
 }
